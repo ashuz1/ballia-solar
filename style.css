@@ -49,6 +49,11 @@ h2::after {
     background-color: var(--primary);
 }
 
+.text-center h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 h3 {
     font-size: 1.6rem;
 }
@@ -73,11 +78,6 @@ section {
     text-align: center;
 }
 
-.text-center h2::after {
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 .btn {
     display: inline-block;
     padding: 12px 30px;
@@ -90,6 +90,7 @@ section {
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin: 5px;
 }
 
 .btn:hover {
@@ -126,6 +127,13 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
 }
 
 .logo h1 {
@@ -232,6 +240,11 @@ nav ul li a:hover {
     padding: 25px;
 }
 
+.service-content h3 {
+    color: var(--secondary);
+    margin-bottom: 15px;
+}
+
 /* About Section */
 .about {
     background-color: var(--light);
@@ -250,6 +263,22 @@ nav ul li a:hover {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
+.about-list {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.about-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.about-list li i {
+    color: var(--success);
+    margin-right: 10px;
+}
+
 /* Projects Section */
 .projects-grid {
     display: grid;
@@ -262,6 +291,11 @@ nav ul li a:hover {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
 }
 
 .project-image {
@@ -285,6 +319,11 @@ nav ul li a:hover {
     padding: 20px;
 }
 
+.project-content h3 {
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
 /* Contact Section */
 .contact {
     background-color: var(--light);
@@ -305,23 +344,42 @@ nav ul li a:hover {
 
 .contact-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
 }
 
 .contact-icon {
     background-color: var(--primary);
     color: white;
-    width: 50px;
+    min-width: 50px;
     height: 50px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.contact-form h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--secondary);
 }
 
 .contact-form input,
+.contact-form select,
 .contact-form textarea {
     width: 100%;
     padding: 12px 15px;
@@ -329,11 +387,16 @@ nav ul li a:hover {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
 }
 
 .contact-form textarea {
     height: 150px;
     resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
 }
 
 /* Footer */
@@ -350,49 +413,93 @@ footer {
     margin-bottom: 40px;
 }
 
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo-img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
 .footer-logo h3 {
     color: white;
     margin-bottom: 15px;
 }
 
+.footer-logo p {
+    color: #ccc;
+}
+
 .footer-links h4,
+.footer-services h4,
 .footer-contact h4 {
     color: white;
     margin-bottom: 20px;
     font-size: 1.2rem;
 }
 
-.footer-links ul {
+.footer-links ul,
+.footer-services ul {
     list-style: none;
 }
 
-.footer-links ul li {
+.footer-links ul li,
+.footer-services ul li {
     margin-bottom: 10px;
 }
 
-.footer-links ul li a {
+.footer-links ul li a,
+.footer-services ul li a {
     color: #ccc;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.footer-links ul li a:hover {
+.footer-links ul li a:hover,
+.footer-services ul li a:hover {
     color: var(--primary);
+}
+
+.footer-contact p {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.footer-contact p i {
+    margin-right: 10px;
+    color: var(--primary);
+    margin-top: 3px;
 }
 
 .social-icons {
     margin-top: 15px;
+    display: flex;
+    gap: 15px;
 }
 
 .social-icons a {
     color: white;
-    margin-right: 15px;
     font-size: 1.2rem;
-    transition: color 0.3s;
+    transition: all 0.3s;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-icons a:hover {
     color: var(--primary);
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-3px);
 }
 
 .copyright {
@@ -430,6 +537,7 @@ footer {
         flex-direction: column;
         padding: 20px;
         box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        z-index: 1000;
     }
     
     nav ul.show {
@@ -456,6 +564,19 @@ footer {
     section {
         padding: 60px 0;
     }
+    
+    .logo-img {
+        height: 40px;
+    }
+    
+    .footer-logo-img {
+        height: 50px;
+    }
+    
+    .services-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 576px) {
@@ -474,5 +595,20 @@ footer {
     .btn {
         padding: 10px 20px;
         font-size: 0.9rem;
+        display: block;
+        margin: 10px auto;
+    }
+    
+    .contact-form {
+        padding: 20px;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .contact-icon {
+        margin-bottom: 10px;
     }
 }

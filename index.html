@@ -7,13 +7,51 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- <style>
+        /* Additional CSS for logo styling */
+        .logo-img {
+            height: 50px; /* Control the height */
+            width: auto; /* Maintain aspect ratio */
+            object-fit: contain;
+        }
+        
+        .footer-logo-img {
+            height: 60px;
+            width: auto;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+        
+        /* For mobile responsiveness */
+        @media (max-width: 768px) {
+            .logo-img {
+                height: 40px;
+            }
+            .footer-logo-img {
+                height: 50px;
+            }
+        }
+        
+        /* Logo container in header */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .footer-logo {
+            display: flex;
+            flex-direction: column;
+        }
+    </style> -->
 </head>
 <body>
     <!-- Header & Navigation -->
     <header>
         <div class="container header-container">
             <div class="logo">
-                <i class="fas fa-sun logo-icon"></i>
+                <!-- Your JPEG logo -->
+                <img src="images/logo.jpeg" alt="Ballia Solar Logo" class="logo-img">
                 <h1>Ballia <span>Solar</span></h1>
             </div>
             
@@ -36,9 +74,9 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <h1>Powering Your Future with Solar Energy</h1>
-            <p>Ballia Solar provides high-quality, efficient solar energy solutions for residential and commercial properties. Harness the power of the sun and reduce your electricity bills today.</p>
-            <a href="#contact" class="btn">Get Free Consultation</a>
+            <h1>Powering Ballia with Clean Solar Energy</h1>
+            <p>Your trusted local solar solution provider in Ballia, Uttar Pradesh. We specialize in residential, commercial, and agricultural solar systems including solar water pumps and installations.</p>
+            <a href="#contact" class="btn">Get Free Site Assessment</a>
             <a href="#services" class="btn btn-secondary">Our Services</a>
         </div>
     </section>
@@ -48,7 +86,7 @@
         <div class="container">
             <div class="text-center">
                 <h2>Our Solar Solutions</h2>
-                <p>We offer comprehensive solar energy services tailored to your needs</p>
+                <p>Comprehensive solar energy services tailored for Ballia region</p>
             </div>
             
             <div class="services-grid">
@@ -57,18 +95,28 @@
                         <i class="fas fa-home"></i>
                     </div>
                     <div class="service-content">
-                        <h3>Residential Solar</h3>
-                        <p>Complete solar solutions for homes including installation, maintenance, and financing options to make solar power accessible for every household.</p>
+                        <h3>Residential Solar Systems</h3>
+                        <p>Complete rooftop solar solutions for homes in Ballia. Reduce electricity bills by up to 90% with our efficient solar installations for residential properties.</p>
                     </div>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-building"></i>
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Solar Water Pumps</h3>
+                        <p>Agricultural and domestic solar water pump solutions. Perfect for irrigation, drinking water, and livestock needs in Ballia's rural and urban areas.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-industry"></i>
                     </div>
                     <div class="service-content">
                         <h3>Commercial Solar</h3>
-                        <p>Custom solar systems for businesses to reduce operational costs and demonstrate environmental responsibility with clean energy solutions.</p>
+                        <p>Solar solutions for businesses, shops, schools, and industries in Ballia. Cut operational costs and ensure uninterrupted power supply.</p>
                     </div>
                 </div>
                 
@@ -78,7 +126,7 @@
                     </div>
                     <div class="service-content">
                         <h3>Solar Panel Installation</h3>
-                        <p>Professional installation of high-efficiency solar panels with industry-leading warranties and performance guarantees.</p>
+                        <p>Professional installation of high-quality solar panels with government subsidy assistance. We handle everything from permits to grid connection.</p>
                     </div>
                 </div>
                 
@@ -88,7 +136,17 @@
                     </div>
                     <div class="service-content">
                         <h3>Maintenance & Repair</h3>
-                        <p>Comprehensive maintenance services to ensure your solar system operates at peak efficiency throughout its lifespan.</p>
+                        <p>Regular maintenance, cleaning, and repair services for all types of solar systems. We provide 24/7 support for emergency repairs.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>PM Surya Ghar</h3>
+                        <p>Complete assistance with government solar subsidies and documentation. We help you avail maximum benefits from state and central government schemes.</p>
                     </div>
                 </div>
             </div>
@@ -100,13 +158,20 @@
         <div class="container about-container">
             <div class="about-content">
                 <h2>About Ballia Solar</h2>
-                <p>Founded in 2026, Ballia Solar has been at the forefront of the renewable energy revolution, providing clean, affordable solar power solutions to thousands of satisfied customers.</p>
-                <p>Our team of certified solar experts combines technical expertise with a passion for sustainability to deliver customized solar solutions that maximize energy production and savings.</p>
-                <p>We believe in a future powered by clean energy and are committed to making solar power accessible to everyone through innovative financing options and superior customer service.</p>
-                <a href="#contact" class="btn">Contact Us Today</a>
+                <p>Founded in Ballia, Uttar Pradesh, we are your local solar energy experts with deep understanding of the region's energy needs and climatic conditions.</p>
+                <p>Our team consists of certified solar technicians and engineers who have successfully installed over 500+ solar systems across Ballia district, including residential setups, agricultural pumps, and commercial installations.</p>
+                <p>We specialize in:</p>
+                <ul class="about-list">
+                    <li><i class="fas fa-check-circle"></i> Solar water pumps for agriculture</li>
+                    <li><i class="fas fa-check-circle"></i> Residential rooftop solar systems</li>
+                    <li><i class="fas fa-check-circle"></i> Commercial and industrial solar solutions</li>
+                    <li><i class="fas fa-check-circle"></i> Government subsidy assistance</li>
+                    <li><i class="fas fa-check-circle"></i> Complete after-sales service</li>
+                </ul>
+                <a href="#contact" class="btn">Get Your Custom Quote</a>
             </div>
             <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1772&q=80" alt="Solar installation team">
+                <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1772&q=80" alt="Solar installation team in Ballia">
             </div>
         </div>
     </section>
@@ -115,38 +180,38 @@
     <section id="projects">
         <div class="container">
             <div class="text-center">
-                <h2>Our Recent Projects</h2>
-                <p>See how we're transforming energy consumption with solar power</p>
+                <h2>Our Projects in Ballia</h2>
+                <p>Successfully completed solar installations across the district</p>
             </div>
             
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1588854337115-1f67de8b2e1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Residential solar installation">
+                        <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1758&q=80" alt="Residential solar installation in Ballia">
                     </div>
                     <div class="project-content">
-                        <h3>Green Valley Homes</h3>
-                        <p>Complete solar installation for a 50-home community, reducing collective electricity bills by 75%.</p>
+                        <h3>Residential Solar for Attachakki Area</h3>
+                        <p>5kW rooftop solar installation for a residential property in Attachakki, Ballia. System includes 16 solar panels with net metering, reducing electricity bill by 90%.</p>
                     </div>
                 </div>
                 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1774&q=80" alt="Commercial solar panels">
+                        <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1774&q=80" alt="Agricultural solar pump">
                     </div>
                     <div class="project-content">
-                        <h3>TechCorp Headquarters</h3>
-                        <p>Large-scale commercial solar system providing 90% of power needs for a corporate campus.</p>
+                        <h3>Solar Pump for Tube Well</h3>
+                        <p>3HP solar water pump installation for agricultural irrigation in Ballia. Provides consistent water supply for 5-acre farm, eliminating diesel costs completely.</p>
                     </div>
                 </div>
                 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1758&q=80" alt="Solar farm">
+                        <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1758&q=80" alt="Commercial solar installation">
                     </div>
                     <div class="project-content">
-                        <h3>Sunshine Solar Farm</h3>
-                        <p>Community solar farm project providing clean energy to over 200 local households.</p>
+                        <h3>Commercial Solar for Local Business</h3>
+                        <p>10kW commercial solar installation for a Ballia-based business. System includes battery backup for uninterrupted power during outages.</p>
                     </div>
                 </div>
             </div>
@@ -157,8 +222,8 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="text-center">
-                <h2>Contact Us</h2>
-                <p>Ready to go solar? Get in touch with our experts for a free consultation</p>
+                <h2>Contact Ballia Solar</h2>
+                <p>Get a free site assessment and consultation for your solar needs</p>
             </div>
             
             <div class="contact-container">
@@ -168,8 +233,8 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div>
-                            <h4>Our Location</h4>
-                            <p> Bacchaipur Chatti, Ballia, UP</p>
+                            <h4>Our Office</h4>
+                            <p>Bacchaipur Chatti, Ballia, Uttar Pradesh - 277001</p>
                         </div>
                     </div>
                     
@@ -178,8 +243,8 @@
                             <i class="fas fa-phone"></i>
                         </div>
                         <div>
-                            <h4>Phone Number</h4>
-                            <p> +91 9730815668</p>
+                            <h4>Call Us Anytime</h4>
+                            <p>+91 9730815668</p>
                         </div>
                     </div>
                     
@@ -188,8 +253,9 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div>
-                            <h4>Email Address</h4>
+                            <h4>Email Us</h4>
                             <p>info@balliasolar.com</p>
+                            <p>support@balliasolar.com</p>
                         </div>
                     </div>
                     
@@ -199,18 +265,39 @@
                         </div>
                         <div>
                             <h4>Working Hours</h4>
-                            <p>Monday - Sundayday: 9:00 AM - 6:00 PM</p>
+                            <p>Monday - Saturday: 8:00 AM - 8:00 PM</p>
+                            <p>Sunday: 10:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div>
+                            <h4>Service Area</h4>
+                            <p>Serving entire Ballia district and nearby areas in Eastern Uttar Pradesh</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="contact-form">
                     <form id="contactForm">
+                        <h3>Get Free Consultation</h3>
                         <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <input type="tel" placeholder="Your Phone Number">
-                        <textarea placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn">Send Message</button>
+                        <input type="tel" placeholder="Mobile Number" required>
+                        <input type="email" placeholder="Email Address">
+                        <select required>
+                            <option value="">Select Service Interested In</option>
+                            <option value="residential">Residential Solar</option>
+                            <option value="pump">Solar Water Pump</option>
+                            <option value="commercial">Commercial Solar</option>
+                            <option value="maintenance">Maintenance/Repair</option>
+                            <option value="subsidy">Subsidy Guidance</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <textarea placeholder="Your Requirements/Message" rows="4"></textarea>
+                        <button type="submit" class="btn">Submit Request</button>
                     </form>
                 </div>
             </div>
@@ -221,38 +308,50 @@
     <footer>
         <div class="container footer-container">
             <div class="footer-logo">
+                <img src="images/logo.jpeg" alt="Ballia Solar Logo" class="footer-logo-img">
                 <h3>Ballia <span>Solar</span></h3>
-                <p>Providing clean, affordable solar energy solutions since 2015. Powering a brighter, sustainable future for all.</p>
+                <p>Your trusted solar energy partner in Ballia, Uttar Pradesh. Providing clean, affordable solar solutions since 2015.</p>
             </div>
             
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#services">Our Services</a></li>
                     <li><a href="#about">About Us</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#projects">Our Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-services">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#services">Residential Solar</a></li>
+                    <li><a href="#services">Solar Water Pumps</a></li>
+                    <li><a href="#services">Commercial Solar</a></li>
+                    <li><a href="#services">Solar Installation</a></li>
+                    <li><a href="#services">Maintenance & Repair</a></li>
                 </ul>
             </div>
             
             <div class="footer-contact">
                 <h4>Contact Info</h4>
-                <p><i class="fas fa-map-marker-alt"></i> Bacchaipur Chatti, Ballia, UP</p>
+                <p><i class="fas fa-map-marker-alt"></i> Bacchaipur Chatti, Ballia, UP - 277001</p>
                 <p><i class="fas fa-phone"></i> +91 9730815668</p>
                 <p><i class="fas fa-envelope"></i> info@balliasolar.com</p>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>
         
         <div class="container">
             <div class="copyright">
-                <p>&copy; 2023 Ballia Solar. All Rights Reserved. | Designed for a Sustainable Future</p>
+                <p>&copy; <span id="currentYear"></span> Ballia Solar. All Rights Reserved. | Proudly Serving Ballia District</p>
             </div>
         </div>
     </footer>
@@ -273,7 +372,7 @@
         // Simple form submission handling
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for your message! We will contact you soon.');
+            alert('Thank you for your interest in Ballia Solar! Our team will contact you within 24 hours.');
             this.reset();
         });
         
@@ -290,6 +389,37 @@
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Update copyright year automatically
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // WhatsApp integration
+        document.addEventListener('DOMContentLoaded', function() {
+            // Make WhatsApp icon clickable
+            const whatsappIcon = document.querySelector('.fa-whatsapp');
+            if(whatsappIcon) {
+                const whatsappLink = whatsappIcon.parentElement;
+                whatsappLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const phone = '919730815668';
+                    const message = 'Hello Ballia Solar, I need information about solar systems.';
+                    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
+                });
+            }
+            
+            // Make all WhatsApp icons clickable (in case there are multiple)
+            document.querySelectorAll('.fa-whatsapp').forEach(icon => {
+                const parent = icon.parentElement;
+                if(parent.tagName === 'A') {
+                    parent.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const phone = '919730815668';
+                        const message = 'Hello Ballia Solar, I need information about solar systems.';
+                        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
                     });
                 }
             });
